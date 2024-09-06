@@ -29,11 +29,6 @@ const JWT_SECRET= "njasdjogjfpndfasj()ndkldnopasn233i4klasdnivdomgko"
 //const PUBLISHABLE_KEY = "pk_live_51MzPlWLfp0rBpG6Oetfi3yAKpthuh7nEbEjVyTNQmjuBrzpstx1jBKd981RUAxUkhYT63owBA1uHMQY5ozTUkUX900Mz0gEt8o"
 
 
-
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-app.use(cors())
-
 /* All the express routes
 const customerRoutes = require('../Routes/Customers.route');*/
 
