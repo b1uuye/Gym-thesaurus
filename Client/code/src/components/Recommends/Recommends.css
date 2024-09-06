@@ -1,0 +1,116 @@
+.Recommends{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+    margin-top: 4rem ;
+}
+
+.left-rec{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem; /* spacking the text on the left of reviews*/
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left-rec>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.left-rec>:nth-child(2),
+.left-rec>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.left-rec>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.right-rec{
+    flex: 1;
+    position: relative;
+}
+
+.right-rec>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem; /*styling image on the right side of the reviews section*/
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.right-rec>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+
+.right-rec>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem; /*orange block behind picture*/
+    top: 4rem;
+    background: var(--planCard);
+
+}
+
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+ /* Responsive View */
+@media screen and (max-width:768px) {
+    .Recommends{
+        flex-direction: column;
+    }
+
+    .left-rec>:nth-child(2),
+    .left-rec>:nth-child(3){ /*changes left side of the recommendations area to be more tight and column like to fit to screen*/
+        font-size: xx-large;
+    }
+
+    .right-rec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .right-rec>div{
+        position: relative;
+        display: none;
+    }
+
+    .right-rec>img{
+        top: 0; /*used to align the image in the center below text and push buttons down below*/
+        right: 0;
+        position: relative;
+    }
+
+    .right-rec>:last-child{
+        display: block;
+        bottom: 0;  /*used to bring arrows below the image of the person*/
+        left: 0;
+    }
+}

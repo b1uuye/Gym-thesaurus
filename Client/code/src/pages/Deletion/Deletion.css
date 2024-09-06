@@ -1,0 +1,73 @@
+.Deletion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+.Deletion-container{
+    display: grid;
+    background-color: var(--gray);
+    padding: 0px 130px; /*Stying for the grey background homing the entire registration part */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Deletion-container>button{
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: var(--appColor);
+    color: black;   /*Stying for the register button*/
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.Deletion-container>button:hover{
+    transform: scale(1.1);
+}
+
+.Delete-btn{
+    color: white;
+    background-color: var(--appColor);
+    width: 220px;
+
+}
+
+.Delete-btn:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    
+}
+
+.Delete-arrow{
+    position: absolute;
+    width: 2.5rem;
+    top: 12rem;
+    cursor: pointer;
+    left: 26rem;
+}
+
+.Delete-input{
+    display: flex;
+}
+
+@media screen and (max-width: 768px) { /* reponsive view for Login section*/
+
+    .Deletion-container{
+        transform: scale(0.9);
+    }
+
+}

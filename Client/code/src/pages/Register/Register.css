@@ -1,0 +1,56 @@
+.Register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+.Register-container{
+    background-color: var(--gray);
+    padding: 0px 60px; /*Stying for the grey background homing the entire registration part */
+    border-radius: 10px;
+}
+
+h1{
+    color: var(--darkGrey);
+    text-decoration-line: overline; /*Stying for the register title*/
+    text-align: center;
+}
+
+.Rbutton{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: var(--appColor);
+    color: var(--gray);   /*Stying for the register button*/
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: var(--darkGrey); 
+}
+
+.back-arrow-r{
+    position: fixed;
+    width: 1.5rem;
+    cursor: pointer;
+    left: 29rem;
+    top: 5rem;
+}
+
+
+/* RESPONSIVE VIEW */
+@media screen and (max-width: 768px) { /* reponsive view for Register section*/
+
+    .Register-container{
+        transform: scale(0.9);
+    }
+
+}

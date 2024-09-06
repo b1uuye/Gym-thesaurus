@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10rem;
+    height: 4rem;
+}
+
+
+
+.header-menu{ 
+    list-style: none !important;
+    display: flex !important;
+    gap: 2rem !important;
+    color: white !important;
+}
+
+.header-menu>li{
+    cursor: pointer;
+}
+
+.header-menu>li:hover{
+    cursor: pointer;
+    color:var(--orange)
+}
+
+/*.header-menu>Link{
+    color: white; Thought this would help styling the link for the register on the homepage
+}*/
+
+
+
+
+@media screen and (max-width:768px) {
+    .header>:nth-child(2){
+        position: fixed; /*Used for responsive design*/
+        right: 2rem; 
+        z-index: 99;
+    }
+
+    .header-menu{
+        flex-direction: column; /*makes the header area with all options a dropdown menu as it's a column*/
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}

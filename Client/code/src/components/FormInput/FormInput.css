@@ -1,0 +1,28 @@
+.FormInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+label{
+    font-size: 12px;
+    color: black;
+}
+
+
+
+input:invalid[focused = 'true'] ~ span{
+    display: block; /*this is used to allownthe error messages to pop up if you start filling a field but dont finish it or is inputted incorrectly*/
+}
+
+input:invalid[focused = 'true']{
+    border: 1px solid red;
+}
+

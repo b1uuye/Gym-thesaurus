@@ -1,0 +1,101 @@
+
+.workout-categories{
+    display: grid;
+    grid-row-gap: 1rem;      /*creates a side by side view of programs on the page*/
+    grid-column-gap:0.5rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 3rem;
+    justify-content: center;
+}
+
+.workout-category{
+    border-radius: 5px;
+    padding: 2rem; /*this styles each individual card on the workouts underneath search bar*/
+    background-color: gray;
+    color: white;
+}
+
+.workout-category>:nth-child(1){
+    width: 7rem;
+    height: 7rem;
+    display: block;
+    margin: auto;
+}
+
+ .workout-category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;   /*editing heading inside each programs box*/
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+ }
+
+ .workout-category>:nth-child(3){
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    line-height: 25px;
+    text-align: center;
+ }
+
+.workout-category:hover{
+    background: var(--planCard); /*This section adds color when you hover over each program*/
+    transform: scale(1.015); /*this increases the size of the block when hover over it to make it stand out more*/
+ }
+
+ .logo-m{
+    margin: auto;
+    margin-top: 1rem ; /*logo at the bottom of the screen that will allow a person to scroll back up to the top of the screen*/
+    width: 10rem;
+    cursor: pointer;
+ }
+
+ .liked-btn{
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px; 
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .liked-btn:hover{
+    background-color: #5DF15D !important;
+    color: white;
+ }
+
+ .remove-btn{
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px; 
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .remove-btn:hover{
+    background-color: #FF0833 !important;
+    color: white;
+ }
+
+ @media screen and (max-width: 768px) { /* reponsive view for Mainpage section*/
+
+    .workout-categories{
+        display: flex;
+        flex-direction: column; /*brings colums vetically instead of horizontally*/
+    }
+    
+ }

@@ -1,0 +1,34 @@
+.Paymentp-home{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    height: 100%;
+    margin: 0;  /*Basic styling for a brief payment page*/
+    padding: 0;
+    color: white;
+    font-size: 88px;
+    text-align: center;
+    background-color: gray;
+}
+
+.payment-btn{
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: var(--appColor);
+    color: var(--gray);   /*Stying for the payment button*/
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+.Payment-nav{
+    width: 30%;
+    height: 50px;
+    border: none;
+}
