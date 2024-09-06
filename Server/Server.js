@@ -28,7 +28,7 @@ const JWT_SECRET= "njasdjogjfpndfasj()ndkldnopasn233i4klasdnivdomgko"
 
 //const PUBLISHABLE_KEY = "pk_live_51MzPlWLfp0rBpG6Oetfi3yAKpthuh7nEbEjVyTNQmjuBrzpstx1jBKd981RUAxUkhYT63owBA1uHMQY5ozTUkUX900Mz0gEt8o"
 
-//const SECRET_KEY = "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"
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
